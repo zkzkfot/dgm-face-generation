@@ -65,11 +65,10 @@ cp patches/grid_sample_gradfix.py \
 
 ### 3. Download the model checkpoint
 
-Request `network-snapshot-001895.pkl` from the Top-10 submission (max 5 GB, shared via
-email per course guidelines). Place it at:
-
-```
-checkpoints/network-snapshot-001895.pkl
+```bash
+mkdir -p checkpoints
+wget -O checkpoints/network-snapshot-001895.pkl \
+  https://github.com/zkzkfot/dgm-face-generation/releases/download/v1.0/network-snapshot-001895.pkl
 ```
 
 ---
